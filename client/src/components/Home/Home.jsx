@@ -7,9 +7,7 @@ export default function Home({ darkMode }) {
   }, []);
 
   return (
-    <section id="home" className={`
-    // ${!darkMode ? "bg-white" : " bg-gray-700"
-    }`}>
+    <section id="home" className={`${!darkMode ? "bg-white   " : "bg-gray-700"}`}>
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div
           data-aos="fade-left"
@@ -38,7 +36,7 @@ export default function Home({ darkMode }) {
           </p>
           {/* <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p> */}
         </div>
-        <div className="flex flex-wrap  min-[550px]:grid min-[550px]:grid-cols-2 min-[550px]:gap-4 min-[550px]:mt-8">
+        <div className=" grid grid-cols-2 gap-4 mt-8">
           <img
             className="w-full rounded-lg"
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"

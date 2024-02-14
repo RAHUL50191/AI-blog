@@ -5,6 +5,7 @@ import Blogs from "./components/Blogs/Blogs";
 import Navbar from "./components/Navbar/Navbar";
 import React, { useState } from "react";
 import Subscription from "./components/Subsrciption/Subscription";
+import Accordion from "./components/Accordion/Accordion";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -14,6 +15,7 @@ function App() {
       <Home darkMode={darkMode} />
       <Blogs darkMode={darkMode} />
       <Subscription darkMode={darkMode}/>
+      {/* <Accordion  darkMode={darkMode}/> */}
       <Footer darkMode={darkMode} />
     </div>
   );
