@@ -7,12 +7,10 @@ export default function Home({ darkMode }) {
   }, []);
 
   return (
-    <section id="home" className={`${!darkMode ? "bg-white   " : "bg-gray-700"}`}>
-      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+    <section id="home" className={`${!darkMode ? "bg-white " : "bg-gray-700"} `}>
+      <div className="gap-16 items-center py-10 px-6 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:px-6 min-h-[100vh]  max-h-[65rem]">
         <div
-          data-aos="fade-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          
           className={`${
             darkMode
               ? "text-gray-400 font-[300] text-2xl"
@@ -20,14 +18,20 @@ export default function Home({ darkMode }) {
           } sm:text-lg  `}
         >
           <h2
-            className={`mb-4 text-3xl tracking-tight font-bold ${
-              !darkMode ? "text-gray-900" : "text-white"
-            }`}
+          data-aos="fade-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+            className={`mb-4 text-6xl tracking-wide font-bold ${
+              !darkMode ? "text-gray-900" : "text-white" 
+            } bebas-neue-bold`}
           >
             Unlocking the Future: The Latest Breakthroughs in Artificial
             Intelligence
           </h2>
-          <p className="mb-4">
+          <p data-aos="fade-left"
+          data-aos-easing="ease-out-cubic"
+          Data-aos-delay="2000"
+          data-aos-duration="2000" className="mb-4 text-xl tracking-wider text-slate-200">
             Catch up on the latest in artificial intelligence with our
             insightful blog. Delve into cutting-edge research, real-world
             applications, and thought-provoking discussions. Whether you're a

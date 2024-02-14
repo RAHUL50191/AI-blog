@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/logo.svg"
 export default function Navbar({darkMode, setDarkMode}) {
+  const [isSpinning, setIsSpinning] = useState(false);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setIsSpinning(true); // Trigger spinning animation
+    setDarkMode(!darkMode); // Toggle dark mode
 
+    // Reset spinning animation after 1 second
+    setTimeout(() => {
+      setIsSpinning(false);
+    }, 2000);
   };
 
   return (
     <div>
-      <nav className={` ${darkMode ? "bg-black dark:bg-gray-900 dark:border-gray-700" : 'bg-white border-gray-200 '} `}>
+      <nav className={` ${darkMode ? "bg-black dark:bg-gray-900 dark:border-gray-700" : 'bg-white border-gray-200 '} max-h-[65rem]`}>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="#home" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} className="h-8" alt="Flowbite Logo" />
@@ -36,7 +42,7 @@ export default function Navbar({darkMode, setDarkMode}) {
               </li>
               <li className={`block py-2 px-3 ${darkMode ? 'text-white' : 'text-gray-900 hover:bg-gray-100'} rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}> 
                 <button onClick={toggleDarkMode}>
-                  <i className={`${darkMode ? 'fa-solid fa-moon':"fa-regular fa-sun"}`}></i>
+                  <i className={`${darkMode ? 'fa-solid fa-moon':"fa-regular fa-sun"} cursor-pointer ${isSpinning ? 'spin' : ''}`}></i>
                 </button>
               </li> 
             </ul>
