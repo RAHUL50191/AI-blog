@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg"
 const Footer = ({darkMode}) => {
   return (
-    <div className={`flex justify-center ${darkMode?"bg-black text-white ":"bg-white text-black"}`}>
-      <footer className={`relative z-10  p-6 lg:pb-20 lg:pt-[80px]`}>
+    <div id="footer" className={`flex justify-center ${darkMode?"bg-black text-white ":"bg-white text-black"} `}>
+      <footer className={`relative   p-6 lg:pb-20 lg:pt-[80px]`}>
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">

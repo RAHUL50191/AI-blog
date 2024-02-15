@@ -8,7 +8,10 @@ const Subscription = ({ darkMode }) => {
   };
 
   return (
-    <section id="home" className={`${darkMode ? "bg-gray-700 text-white" : "bg-white text-gray-900"} py-12 px-4 sm:px-6 lg:px-8`}>
+    <section id="subscription" >
+       
+    <div  className={`${darkMode ? "bg-gray-700 text-white" : "bg-white text-gray-900"} w-full py-12 px-12 sm:px-6 lg:px-8`}>
+
       <div className={`max-w-[65rem] mx-auto rounded-lg shadow-md ${darkMode ? "bg-gray-800" : "bg-white"} dark:border dark:border-gray-700`}>
         <div className="p-6 sm:p-8">
           <h3 className={`text-xl font-medium mb-4 ${darkMode ? "text-white" : "text-gray-900"}`}>Get more updates...</h3>
@@ -36,7 +39,10 @@ const Subscription = ({ darkMode }) => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
+   
+   
+    </section >
   );
 };
 

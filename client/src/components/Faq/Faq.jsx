@@ -24,8 +24,8 @@ const FAQ = ({ darkMode }) => {
   
 
   return (
-    <div className={` ${darkMode?"text-white bg-gray-700":"text-black bg-white"}`}>
-      <div className="py-10 max-w-3xl mx-auto ">
+    <div className={` ${darkMode?"text-white bg-gray-700 ":"text-black bg-white"}`}>
+      <div className="py-10 max-w-5xl mx-auto ">
         <h2 className=" flex w-full text-4xl font-bold mb-4 justify-center bebas-neue-regular">FAQs About AI Tech Tools</h2>
         <div className="border rounded overflow-hidden">
           {faqData.map((faq, index) => (

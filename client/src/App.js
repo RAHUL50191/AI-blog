@@ -15,6 +15,7 @@ function App() {
       <Home darkMode={darkMode} />
       <Blogs darkMode={darkMode} />
       <FAQ darkMode={darkMode} />
+      <div id="subscription" darkMode={darkMode} className={`${darkMode ? "bg-gray-700" : "bg-white"} w-full h-[5rem]`}></div>
       <Subscription darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
