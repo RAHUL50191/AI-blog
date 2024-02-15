@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+/* ----navbar toggle spinner ----*/
+.spin{animation: spin infinite;animation-duration: 2s;} 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ 
