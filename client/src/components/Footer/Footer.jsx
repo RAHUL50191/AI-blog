@@ -4,6 +4,9 @@ import logo from "../../assets/logo.svg"
 const Footer = ({darkMode}) => {
   return (
     <div id="footer" className={`flex justify-center ${darkMode?"bg-black text-white ":"bg-white text-black"} `}>
+
+
+
       <footer className={`relative   p-6 lg:pb-20 lg:pt-[80px]`}>
         <div className="container">
           <div className="-mx-4 flex flex-wrap">

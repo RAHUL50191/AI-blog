@@ -24,12 +24,12 @@ const FAQ = ({ darkMode }) => {
   
 
   return (
-    <div className={` ${darkMode?"text-white bg-gray-700 ":"text-black bg-white"}`}>
+    <div className={` ${darkMode?"text-white bg-gray-700 ":"text-black bg-white"} min-[750px]:px-4 min-[400px]:px-18  px-4`}>
       <div className="py-10 max-w-5xl mx-auto ">
-        <h2 className=" flex w-full text-4xl font-bold mb-4 justify-center bebas-neue-regular">FAQs About AI Tech Tools</h2>
-        <div className="border rounded overflow-hidden">
+        <h2 className=" flex w-full text-4xl font-bold mb-4 justify-center bebas-neue-regular ">FAQs About AI Tech Tools</h2>
+        <div className={`border ${darkMode?"":"border-black"} rounded overflow-hidden`}>
           {faqData.map((faq, index) => (
-            <div key={index} className="border-b">
+            <div key={index} className={`border-b  ${darkMode?"":"border-b-black"}`}>
               <button
                 className="flex justify-between w-full p-4 text-left focus:outline-none"
                 onClick={() => toggleAccordion(index + 1)}
