@@ -20,7 +20,7 @@
 import React from 'react';
 // import im from "./Card/.jpg"
 import Card from './Card/Card';
-import AI from '../AI/AI';
+ 
 
 const Blogs = ({darkMode}) => {
   const blogs = [

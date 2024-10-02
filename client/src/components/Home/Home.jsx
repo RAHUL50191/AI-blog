@@ -1,7 +1,7 @@
 import AOS from "aos";
 import React, { useEffect } from "react";
 import "aos/dist/aos.css";
-import AI from "../AI/AI";
+ 
 import tv from "../../assets/tv.png"
 import a from "../../assets/apple.png"
 export default function Home({ darkMode }) {
